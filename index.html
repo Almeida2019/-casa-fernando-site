@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Fernando - Construir com Qualidade e Compromisso</title>
+    
+    <!-- External Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+    <!-- Professional Header -->
+    <header class="fixed w-full top-0 z-50 professional-header">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="logo-container">
+                <img src="https://raw.githubusercontent.com/Almeida2019/images/refs/heads/main/empresa%20casa%20fernando/webp/Casa%20Fernando%20Logo.webp" alt="Casa Fernando" class="h-12">
+                <span class="company-name" data-key="company-name">Casa Fernando</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-2">
+                <a href="#inicio" class="nav-link" data-key="nav-home">Início</a>
+                <a href="#sobre" class="nav-link" data-key="nav-about">Sobre Nós</a>
+                <a href="#servicos" class="nav-link" data-key="nav-services">Serviços</a>
+                <a href="#equipa" class="nav-link" data-key="nav-team">Equipa</a>
+                <a href="#contactos" class="nav-link" data-key="nav-contact">Contactos</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <div class="language-toggle">
+                    <div class="language-option active" data-lang="pt">PT</div>
+                    <div class="language-option" data-lang="en">EN</div>
+                </div>
+                
+                <button class="theme-toggle" id="theme-toggle" title="Alternar tema">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="md:hidden hidden border-t" id="mobile-menu">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#inicio" class="block nav-link" data-key="nav-home">Início</a>
+                <a href="#sobre" class="block nav-link" data-key="nav-about">Sobre Nós</a>
+                <a href="#servicos" class="block nav-link" data-key="nav-services">Serviços</a>
+                <a href="#equipa" class="block nav-link" data-key="nav-team">Equipa</a>
+                <a href="#contactos" class="block nav-link" data-key="nav-contact">Contactos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stunning Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="slides">
+            <div class="slide active">
+                <img src="https://raw.githubusercontent.com/Almeida2019/images/refs/heads/main/empresa%20casa%20fernando/webp/Casa%20Fernando%20Main%20Office.webp" alt="Casa Fernando Office">
+            </div>
+            <div class="slide">
+                <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Servic%CC%A7os%20Ele%CC%81tricos%20Exteriores%20e%20de%20Utilidade%20Pu%CC%81blica2.webp" alt="Serviços Elétricos">
+            </div>
+            <div class="slide">
+                <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Obras%20de%20Construc%CC%A7a%CC%83o%20e%20Fundac%CC%A7o%CC%83es5.webp" alt="Obras de Construção">
+            </div>
+            <div class="overlay-dark"></div>
+            <div class="overlay-gradient"></div>
+        </div>
+
+        <div class="hero-content animate-fade-in-up">
+            <h1 class="hero-title" id="hero-title" data-key="hero-title">Empresa Casa Fernando</h1>
+            <h2 class="hero-subtitle" id="hero-subtitle" data-key="hero-subtitle">Construção Civil e Obras Públicas</h2>
+            <p class="hero-description" id="hero-description" data-key="hero-description">Projetos residenciais e comerciais com qualidade garantida</p>
+            <button class="cta-button" id="hero-cta" data-key="hero-cta">OBTER ORÇAMENTO</button>
+        </div>
+
+        <button class="carousel-nav left" id="carousel-prev">❮</button>
+        <button class="carousel-nav right" id="carousel-next">❯</button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+    </section>
+
+    <!-- Enhanced About Section -->
+    <section id="sobre" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="about-title">Sobre a Casa Fernando</h2>
+                <p class="section-subtitle" data-key="about-subtitle">Construir com qualidade e compromisso</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6" data-key="history-title">A Nossa História</h3>
+                    <p class="mb-6 text-lg leading-relaxed" data-key="history-text">A Casa Fernando é uma empresa angolana com sede em Cabinda, atuando nos sectores de construção civil, obras públicas, instalações elétricas e comércio geral (importação e exportação).</p>
+                    <p class="mb-6 text-lg leading-relaxed" data-key="history-text2">Iniciou sua trajetória no ramo comercial em 2017, expandindo suas atividades em 2020 para as áreas de engenharia e infraestrutura. Desde então, vem se destacando pela qualidade dos serviços, compromisso com os prazos e atendimento personalizado.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">2017</div>
+                            <div class="stat-label" data-key="founded">Fundada</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label" data-key="projects">Projetos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label" data-key="employees">Funcionários</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="https://raw.githubusercontent.com/Almeida2019/images/refs/heads/main/empresa%20casa%20fernando/webp/Casa%20Fernando%20Main%20Office.webp" alt="Escritório Casa Fernando" class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+
+            <!-- Mission, Vision, Values -->
+            <div class="mvv-grid">
+                <div class="mvv-card">
+                    <div class="mvv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" data-key="mission-title">Missão</h3>
+                    <p class="leading-relaxed" data-key="mission-text">Oferecer soluções integradas e de qualidade nas áreas de construção civil, obras públicas, instalações elétricas e comércio geral, contribuindo para o desenvolvimento sustentável de Angola.</p>
+                </div>
+
+                <div class="mvv-card">
+                    <div class="mvv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" data-key="vision-title">Visão</h3>
+                    <p class="leading-relaxed" data-key="vision-text">Ser uma referência nacional em engenharia e comércio, reconhecida pela excelência, inovação e compromisso com o desenvolvimento socioeconômico do país.</p>
+                </div>
+
+                <div class="mvv-card">
+                    <div class="mvv-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" data-key="values-title">Valores</h3>
+                    <ul class="text-left space-y-2 leading-relaxed">
+                        <li data-key="value-1">• Qualidade e compromisso</li>
+                        <li data-key="value-2">• Transparência</li>
+                        <li data-key="value-3">• Responsabilidade social</li>
+                        <li data-key="value-4">• Profissionalismo</li>
+                        <li data-key="value-5">• Inovação contínua</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Services Section -->
+    <section id="servicos" class="services-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="services-title">Os Nossos Serviços</h2>
+                <p class="section-subtitle" data-key="services-subtitle">Soluções completas para todos os seus projetos</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="service-title" data-key="service1-title">Construção Civil</h3>
+                    </div>
+                    <p class="service-description" data-key="service1-desc">Edifícios, moradias, fundações e reformas com os mais altos padrões de qualidade e segurança.</p>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Obras%20de%20Construc%CC%A7a%CC%83o%20e%20Fundac%CC%A7o%CC%83es1.webp" alt="Construção Civil">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-title">Projeto Residencial</div>
+                                <div class="portfolio-description">Construção de moradia moderna</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Obras%20de%20Construc%CC%A7a%CC%83o%20e%20Fundac%CC%A7o%CC%83es2.webp" alt="Fundações">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-title">Fundações</div>
+                                <div class="portfolio-description">Estruturas sólidas e duráveis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <h3 class="service-title" data-key="service2-title">Obras Públicas</h3>
+                    </div>
+                    <p class="service-description" data-key="service2-desc">Infraestruturas públicas, estradas, escolas, postos de saúde e residências para pessoas singulares.</p>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Projetos%20Pu%CC%81blicos%20e%20Comunita%CC%81rios1.webp" alt="Projeto Público">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-title">Infraestrutura Pública</div>
+                                <div class="portfolio-description">Desenvolvimento comunitário</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Projetos%20Pu%CC%81blicos%20e%20Comunita%CC%81rios2.webp" alt="Projeto Comunitário">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-title">Projeto Comunitário</div>
+                                <div class="portfolio-description">Investimento social</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="service-title" data-key="service3-title">Instalações Elétricas</h3>
+                    </div>
+                    <p class="service-description" data-key="service3-desc">Instalações residenciais, comerciais e industriais com tecnologia avançada e segurança garantida.</p>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Exteriores%20e%20de%20Utilidade%20Pu%CC%81blica10.webp" alt="Instalações Exteriores">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-title">Instalações Exteriores</div>
+                                <div class="portfolio-description">Iluminação pública</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Servic%CC%A7os%20Ele%CC%81tricos%20Exteriores%20e%20de%20Utilidade%20Pu%CC%81blica1.webp" alt="Serviços Elétricos">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-title">Serviços Elétricos</div>
+                                <div class="portfolio-description">Manutenção e instalação</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3 class="service-title" data-key="service4-title">Comércio Geral</h3>
+                    </div>
+                    <p class="service-description" data-key="service4-desc">Venda de equipamentos e materiais de eletricidade de alta qualidade. Importação e exportação.</p>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Equipamentos%20e%20Produtos%20Ele%CC%81tricos%20Showroom-Loja1.webp" alt="Showroom">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-title">Showroom</div>
+                                <div class="portfolio-description">Equipamentos de qualidade</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Equipamentos%20Pesados%20e%20Maquinaria1.webp" alt="Equipamentos Pesados">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-title">Maquinaria</div>
+                                <div class="portfolio-description">Equipamentos pesados</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stunning Team Section -->
+    <section id="equipa" class="team-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="team-title">Nossa Equipa</h2>
+                <p class="section-subtitle" data-key="team-subtitle">Profissionais experientes e dedicados ao sucesso dos seus projetos</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Team Members -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Lui%CC%81s%20Fernando%20Gomes-Director%20geral.webp" alt="Luís Fernando Gomes">
+                    </div>
+                    <h3 class="team-name">Luís Fernando Gomes</h3>
+                    <p class="team-position" data-key="position-director">Director Geral</p>
+                    <p class="team-bio" data-key="bio-luis">Líder visionário com experiência em gestão estratégica e desenvolvimento empresarial</p>
+                    <div class="team-links">
+                        <a href="#" class="team-link" data-key="linkedin">LinkedIn</a>
+                        <a href="mailto:luis.gomes@casafernando.ao" class="team-link">Email</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Jorgeta%20Lelo-RH.webp" alt="Jorgeta Lelo">
+                    </div>
+                    <h3 class="team-name">Jorgeta Lelo</h3>
+                    <p class="team-position" data-key="position-hr">Recursos Humanos</p>
+                    <p class="team-bio" data-key="bio-jorgeta">Especialista em gestão de talentos e desenvolvimento organizacional</p>
+                    <div class="team-links">
+                        <a href="#" class="team-link" data-key="linkedin">LinkedIn</a>
+                        <a href="mailto:jorgeta.lelo@casafernando.ao" class="team-link">Email</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://raw.githubusercontent.com/Almeida2019/images/refs/heads/main/empresa%20casa%20fernando/webp/Andre%CC%81%20Filipe-Financ%CC%A7as.webp" alt="André Filipe">
+                    </div>
+                    <h3 class="team-name">André Filipe</h3>
+                    <p class="team-position" data-key="position-finance">Finanças</p>
+                    <p class="team-bio" data-key="bio-andre">Responsável pela gestão financeira e planeamento estratégico</p>
+                    <div class="team-links">
+                        <a href="#" class="team-link" data-key="linkedin">LinkedIn</a>
+                        <a href="mailto:andre.filipe@casafernando.ao" class="team-link">Email</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Victor%20Maria%20Luba-Contabilidade.webp" alt="Victor Maria Luba">
+                    </div>
+                    <h3 class="team-name">Victor Maria Luba</h3>
+                    <p class="team-position" data-key="position-accounting">Contabilidade</p>
+                    <p class="team-bio" data-key="bio-victor">Especialista em contabilidade empresarial e conformidade fiscal</p>
+                    <div class="team-links">
+                        <a href="#" class="team-link" data-key="linkedin">LinkedIn</a>
+                        <a href="mailto:victor.luba@casafernando.ao" class="team-link">Email</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Fe%CC%81lix%20Nzukulo%20Lelo-Suporte%20te%CC%81cnico.webp" alt="Félix Nzukulo Lelo">
+                    </div>
+                    <h3 class="team-name">Félix Nzukulo Lelo</h3>
+                    <p class="team-position" data-key="position-support">Suporte Técnico</p>
+                    <p class="team-bio" data-key="bio-felix">Especialista em suporte técnico e manutenção de equipamentos</p>
+                    <div class="team-links">
+                        <a href="#" class="team-link" data-key="linkedin">LinkedIn</a>
+                        <a href="mailto:felix.lelo@casafernando.ao" class="team-link">Email</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://raw.githubusercontent.com/Almeida2019/images/8c5a86601a0e52cd098f973ddcc24dfddaa7bff4/empresa%20casa%20fernando/webp/Quelson%20Rosa-Informac%CC%A7a%CC%83o.webp" alt="Quelson Rosa">
+                    </div>
+                    <h3 class="team-name">Quelson Rosa</h3>
+                    <p class="team-position" data-key="position-it">Informação</p>
+                    <p class="team-bio" data-key="bio-quelson">Responsável pelos sistemas de informação e tecnologia</p>
+                    <div class="team-links">
+                        <a href="#" class="team-link" data-key="linkedin">LinkedIn</a>
+                        <a href="mailto:quelson.rosa@casafernando.ao" class="team-link">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Contact Section -->
+    <section id="contactos" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="contact-title">Entre em Contacto</h2>
+                <p class="section-subtitle" data-key="contact-subtitle">Estamos prontos para realizar o seu projeto</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="text-2xl font-bold mb-8" data-key="contact-info">Informações de Contacto</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-key="address">Endereço</h4>
+                            <p>Cabinda, Bairro A Resistência, Rua 28 de Maio, frente ao Hotel HD</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-key="phone">Telefone</h4>
+                            <p>922-323-790 / 975-223-950</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>geral@casafernando.ao</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-6 text-lg" data-key="social-media">Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="https://wa.me/244922323790" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 class="text-2xl font-bold mb-8" data-key="contact-form">Formulário de Contacto</h3>
+                    <form id="contact-form-element">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="form-group">
+                                <label class="form-label" data-key="form-name">Nome</label>
+                                <input type="text" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" data-key="form-subject">Assunto</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" data-key="form-message">Mensagem</label>
+                            <textarea class="form-input form-textarea" required></textarea>
+                        </div>
+
+                        <button type="submit" class="form-button" data-key="form-send">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">
+                        <img src="https://raw.githubusercontent.com/Almeida2019/images/refs/heads/main/empresa%20casa%20fernando/webp/Casa%20Fernando%20Logo.webp" alt="Casa Fernando">
+                        <span class="footer-brand-name">Casa Fernando</span>
+                    </div>
+                    <p class="footer-description" data-key="footer-desc">Construir com qualidade e compromisso. A sua parceira de confiança em construção civil, obras públicas e instalações elétricas.</p>
+                    <p class="footer-description" data-key="footer-availability">Estamos disponíveis a prestar serviços em qualquer município da província de Cabinda.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-key="footer-services">Serviços</h3>
+                    <ul class="footer-list">
+                        <li data-key="service1-title">Construção Civil</li>
+                        <li data-key="service2-title">Obras Públicas</li>
+                        <li data-key="service3-title">Instalações Elétricas</li>
+                        <li data-key="service4-title">Comércio Geral</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-key="footer-contact">Contacto</h3>
+                    <ul class="footer-list">
+                        <li>922-323-790</li>
+                        <li>975-223-950</li>
+                        <li>geral@casafernando.ao</li>
+                        <li>Cabinda, Angola</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-key="footer-copyright">&copy; 2024 Casa Fernando. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to your custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
